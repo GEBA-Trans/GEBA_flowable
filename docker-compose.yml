@@ -122,8 +122,8 @@ services:
         entrypoint: ["./wait-for-something.sh", "flowable-db", "5432", "PostgreSQL", "java", "-jar", "app.war"]
     flowable-db:
         image: postgres:9.6-alpine
-        # volumes:
-        #     - db-volume:/var/lib/postgresql/data
+        volumes:
+            - db-volume:/var/lib/postgresql/data
         container_name: flowable-postgres
         environment:
             - POSTGRES_PASSWORD=flowable
@@ -134,4 +134,4 @@ services:
         command: postgres
 volumes:
     content-volume:
-    # db-volume:
+    db-volume:
