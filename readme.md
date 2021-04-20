@@ -9,6 +9,20 @@ https://flowable.com/open-source/docs/bpmn/ch15-REST/
 
 https://github.com/flowable/flowable-engine/issues/1471
 
+https://forum.flowable.org/t/how-to-use-rest-api-in-docker/2977/
+
+https://paulhh.wordpress.com/author/paulhh/
+
+<!-- https://camunda.com/blog/2015/08/start-and-complete-process-with-rest-api/
+
+https://docs.camunda.org/manual/7.3/api-references/rest/#process-definition-start-process-instance -->
+
+
+## Url
+
+- lx-docker03:8080/flowable-idm/#/
+- lx-docker03:8888/flowable-modeler/#/
+- lx-docker03:9999/flowable-task/#/
 
 
 ## opvragen via REST
@@ -69,3 +83,7 @@ data-1.json
     }
   ]
 }
+
+
+
+
