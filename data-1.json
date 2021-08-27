@@ -1,0 +1,29 @@
+{
+  "action" : "complete",
+  "variables" : [
+    {
+        "id": "continent",
+        "name": "Continent",
+        "type": "dropdown",
+        "value": "EU"
+    },
+    {
+        "id": "budget",
+        "name": "Budget",
+        "type": "integer",
+        "value": 12
+    },
+    {
+        "id": "employeeNumber",
+        "name": "Employee Number",
+        "type": "integer",
+        "value": 123456
+    },
+    {
+        "id": "clientname",
+        "name": "Client Name",
+        "type": "text",
+        "value": "Kai"
+    }
+  ]
+}

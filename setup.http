@@ -1,0 +1,10 @@
+## get processes
+
+
+curl -i 'http://admin:test@localhost:9999/flowable-task/process-api/runtime/process-instances'
+
+
+###
+## get variables for process
+curl -i 'http://admin:test@localhost:9999/flowable-task/process-api/runtime/process-instances/53197106-eef0-11eb-a22f-0242c0a8c005/variables'
+

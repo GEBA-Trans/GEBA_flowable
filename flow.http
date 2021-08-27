@@ -1,0 +1,32 @@
+# Happy Flow
+
+## create new Task
+
+POST http://admin:test@localhost:9999/flowable-task/process-api/runtime/process-instances HTTP/1.1
+content-type: application/json
+
+{
+	"processDefinitionKey": "geba_flow_rest_1",
+	"variables": [{"name": "continent",
+    "type": "string",
+    "value": "EU"
+  }, {
+    "name": "clientname",
+    "type": "string",
+    "value": "Kai"
+  }, {
+    "name": "initiator",
+    "type": "string",
+    "value": "admin"
+  }, {
+    "name": "budget",
+    "type": "long",
+    "value": 500
+  }]
+}
+
+###
+
+## check open tasks 
+http://localhost:9999/flowable-task/workflow/#/
+

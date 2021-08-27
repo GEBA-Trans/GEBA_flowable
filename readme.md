@@ -36,7 +36,78 @@ curl -i 'http://admin:test@0.0.0.0:9999/flowable-task/process-api/runtime/tasks'
 
 curl -i 'http://admin:test@0.0.0.0:9999/flowable-task/process-api/repository/deployments'
 
+**get form ID**
 curl -i 'http://admin:test@0.0.0.0:9999/flowable-task/process-api/repository/process-definitions'
+
+**start form processDefinitionKey**
+curl -i 'http://admin:test@0.0.0.0:9999/flowable-task/process-api/repository/process-definitions/geba_flow_rest_1:3:2f304a19-eee4-11eb-a22f-0242c0a8c005/start-form'
+
+**start process**
+
+curl -H "Content-Type: application/json" -X POST http://admin:test@localhost:9999/flowable-task/process-api/runtime/process-instances -d "@data-0.json"
+
+https://gebaflow.requestcatcher.com
+
+
+
+**get processes**
+curl -i 'http://admin:test@localhost:9999/flowable-task/process-api/runtime/process-instances'
+**get variables**
+curl -i 'http://admin:test@localhost:9999/flowable-task/process-api/runtime/process-instances/53197106-eef0-11eb-a22f-0242c0a8c005/variables'
+
+
+
+
+curl -i 'http://admin:test@0.0.0.0:9999/flowable-task/process-api/runtime/tasks/d06b0285-eee4-11eb-a22f-0242c0a8c005/form'
+
+
+
+
+
+
+#### Curl Actie uitvoeren:
+ 
+curl -H "Content-Type: application/json" 
+     -X POST http://admin:test@localhost:9999/flowable-task/process-api/runtime/tasks/d7d28db2-eedf-11eb-a22f-0242c0a8c005
+     -d "@data-1.json"
+
+data-1.json
+{
+  "action" : "complete",
+  "variables" : [
+    {
+        "id": "continent",
+        "name": "Continent",
+        "type": "dropdown",
+        "value": "EU"
+    },
+    {
+        "id": "budget",
+        "name": "Budget",
+        "type": "integer",
+        "value": 12
+    },
+    {
+        "id": "employeeNumber",
+        "name": "Employee Number",
+        "type": "integer",
+        "value": 123456
+    },
+    {
+        "id": "clientname",
+        "name": "Client Name",
+        "type": "text",
+        "value": "Kai"
+    }
+  ]
+}
+
+
+
+
+
+
+
 
 curl -i 'http://admin:test@0.0.0.0:9999/flowable-task/process-api/runtime/process-instances'
 curl -i 'http://admin:test@localhost:9999/flowable-task/process-api/runtime/tasks'
